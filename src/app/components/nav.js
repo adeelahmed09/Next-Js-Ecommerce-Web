@@ -17,7 +17,15 @@ function Nav() {
             return(
                 <div className="w-16 flex drop-shadow-md flex-col">
                     <Link href={"/login"}>Log In</Link>
-                    <Link href={"/Sign up"}>Sign Up</Link>
+                    <Link href={"/sign-up"}>Sign Up</Link>
+                </div>
+            )
+        }
+        else{
+            return(
+                <div>
+                    <Link href={"/account"}>Account</Link>
+                    <Link href={"/sign-out"}>Sign Out</Link>
                 </div>
             )
         }
